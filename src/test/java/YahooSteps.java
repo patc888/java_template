@@ -23,21 +23,19 @@ public class YahooSteps {
         }
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        //driver.get("http://www.yahoo.com");
-        driver.get("http://localhost:8080");
+        driver.get("http://tw.yahoo.com");
     }
 
     @When("^I search for \"(\\S+)\"$")
     public void search(String s) {
         // Find the text input element by its name
-        WebElement element = driver.findElement(By.linkText("Objects"));
-        element.click();
+        WebElement element = driver.findElement(By.id("UHSearchBox"));
 
-        // Enter something to search for
-        //element.sendKeys("Cheese!");
+        // Enter the search term
+        element.sendKeys("pig");
 
-        // Now submit the form. WebDriver will find the form for us from the element
-        //element.submit();
+        // Submit the form
+        element.submit();
 
     }
 

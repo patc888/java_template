@@ -1,10 +1,17 @@
 Java Template
 
-This repo makes it easy to start writing a simple Java program built using Maven.
+This repo contains:
 
-1. Clone this directory
-2. Add the library to the pom.xml file
-3. Edit src/main/java/Main.java
-4. mvn package
-5. bin/run <parameters>
-# java_template
+* a sample Main.java program
+* a bin/run script that will execute the Main program
+* a Cucumber test
+* a Cucumber with Selenium test
+
+makes it easy to start writing a simple Java program built using Maven.
+To build and run the tests:
+
+mvn package
+
+To run the Main program:
+
+./bin/run
