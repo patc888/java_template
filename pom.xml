@@ -16,6 +16,28 @@
   </properties>
 
   <dependencies>
+    <!-- Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-api</artifactId>
+      <version>2.48.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>2.48.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-server</artifactId>
+      <version>2.48.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-firefox-driver</artifactId>
+      <version>2.48.2</version>
+    </dependency>
     <!-- JavaMail -->
     <dependency>
        <groupId>javax.mail</groupId>
@@ -77,6 +99,12 @@
       <artifactId>guava</artifactId>
       <version>18.0</version>
     </dependency>
+    <!--dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.8.21</version>
+      <scope>test</scope>
+    </dependency-->
   </dependencies>
 
   <!-- Build rule -->
